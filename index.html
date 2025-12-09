@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantables SOP Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Plantables<span class="highlight">.store</span></h1>
+            <p>Standard Operating Procedures Dashboard</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-grid">
+            <div class="sop-card">
+                <div class="icon-bg">🖨️</div>
+                <h2>Printing Area</h2>
+                <p>Machine setup, quality checks, and maintenance docs.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1q89eZAOsz68ezQ9S0z1UVMO02G8rRyFhOYsSf56EaaA/edit?usp=sharing" target="_blank" class="btn">Open SOP Sheet</a>
+            </div>
+
+            <div class="sop-card">
+                <div class="icon-bg">✂️</div>
+                <h2>Cutting Area</h2>
+                <p>Safe operation of cutters, punches, and finishing tools.</p>
+                <a href="https://docs.google.com/spreadsheets/d/13Ulec1ZEppdE6Vb5jvWTOy3IEB78CV5Zu7PNv3Mgxn4/edit?usp=sharing" target="_blank" class="btn">Open SOP Sheet</a>
+            </div>
+
+            <div class="sop-card">
+                <div class="icon-bg">🎨</div>
+                <h2>Crafting Area</h2>
+                <p>Assembly guides, pasting techniques, and final QC.</p>
+                <a href="https://docs.google.com/spreadsheets/d/1SxaDMnqR3td7jd4B0ufNHPdqkyM1hJ06uLB74uQnjec/edit?usp=sharing" target="_blank" class="btn">Open SOP Sheet</a>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <section class="video-section">
+            <div class="section-header">
+                <h2>Training Hub</h2>
+                <p>Select a video from the list to play it instantly.</p>
+            </div>
+
+            <div class="video-interface">
+                <div class="video-sidebar">
+                    <div class="search-wrapper">
+                        <input type="text" id="videoSearch" placeholder="🔍 Search tutorials...">
+                    </div>
+                    
+                    <ul class="video-list" id="videoList">
+                        <li><a href="#" data-link="https://drive.google.com/file/d/1XgLfgnBVFXKcTGElEgBZJI2yJcqZpSfX/view?usp=drive_link">Handheld Punch Tool (Holes)</a></li>
+                        <li><a href="#" data-link="https://drive.google.com/file/d/1FaeRl_GPVrtVtddShgxJhQvFT8kbHYz0/view?usp=drive_link">How to Use Hammer Punching Tool</a></li>
+                        <li><a href="#" data-link="https://drive.google.com/file/d/1_UO8a6JzsxVcYwlcrbl-gqlYWvHUN007/view?usp=sharing">How to Use Manual Corner Cutter</a></li>
+                        <li><a href="#" data-link="https://drive.google.com/file/d/19xVJ48DPqO8v-eAnra4Xgm5CcoMqbXk0/view?usp=sharing">Glue Pasting on Envelope</a></li>
+                        <li><a href="#" data-link="https://drive.google.com/file/d/1IoOW6Qbo42qnwbpOnVayQ-syiOthOZeI/view?usp=sharing">Crease Making Envelope</a></li>
+                        <li><a href="#" data-link="https://drive.google.com/file/d/1e_JBNc3NtoY9DQW_RKpK2T73Nwc60TtI/view?usp=sharing">Card Holder Pasting</a></li>
+                        <li><a href="#" data-link="https://drive.google.com/file/d/1THpx6Vkd6Q7HUDdO2MtA-VUVL6yf41O2/view?usp=sharing">Saga Digital Cutting Machine</a></li>
+                        <li><a href="#" data-link="https://drive.google.com/file/d/1JVSAwsTMqSY59g5VLo4-Rinm5n0CLCWF/view?usp=sharing">Vulcan Small Cutting Machine</a></li>
+                        <li><a href="#" data-link="https://drive.google.com/file/d/1MhSY8fheb-7bpw0YMqlzK6QI1N-l2UeZ/view?usp=sharing">How to Use Paper Cutter and Scale</a></li>
+                    </ul>
+                    <div id="noResults" class="no-results" style="display:none;">No videos found.</div>
+                </div>
+
+                <div class="video-display">
+                    <div class="video-player-container">
+                        <iframe id="mainPlayer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div id="placeholder-msg" class="player-placeholder">
+                            <span>▶</span>
+                            <p>Select a video to start watching</p>
+                        </div>
+                    </div>
+                    <h3 id="currentVideoTitle"></h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Plantables.store | Internal Training Dashboard</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
