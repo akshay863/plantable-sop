@@ -1,208 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Plantables SOP Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Plantables SOP Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
 
-    <div class="bg-decoration">
-        <div class="circle circle-1"></div>
-        <div class="circle circle-2"></div>
-        <div class="circle circle-3"></div>
-    </div>
-
-    <button class="admin-toggle" id="adminToggle" aria-label="Toggle Admin Panel">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/>
-            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
-        </svg>
-        <span>Admin</span>
-    </button>
-
-    <div class="admin-panel" id="adminPanel">
-        <div class="admin-header">
-            <h2>Admin Panel</h2>
-            <button class="close-btn" id="closeAdmin" aria-label="Close Admin Panel">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path d="M18 6L6 18M6 6l12 12"/>
-                </svg>
-            </button>
+        <div class="bg-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
         </div>
-        
-        <div class="admin-tabs">
-            <button class="tab-btn active" data-tab="videos">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <polygon points="23 7 16 12 23 17 23 7"/>
-                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
-                </svg>
-                Add Video
-            </button>
-            </div>
 
-        <div class="admin-content">
-            <div class="tab-content active" id="videosTab">
-                <form id="addVideoForm" class="admin-form">
-                    <h3>Add New Training Video</h3>
-                    
-                    <div class="form-group">
-                        <label for="videoTitle">Video Title *</label>
-                        <input type="text" id="videoTitle" required placeholder="e.g., How to Use Manual Corner Cutter">
-                    </div>
+        <button class="admin-toggle" id="adminToggle" aria-label="Toggle Admin Panel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/>
+                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+            </svg>
+            <span>Admin</span>
+        </button>
 
-                    <div class="form-group">
-                        <label for="videoLink">Google Drive Link *</label>
-                        <input type="url" id="videoLink" required placeholder="https://drive.google.com/file/d/...">
-                        <span class="help-text">Paste the shareable Google Drive link</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="videoCategory">Category *</label>
-                        <select id="videoCategory" required>
-                            <option value="">Select a category</option>
-                            <option value="Tools">Tools</option>
-                            <option value="Assembly">Assembly</option>
-                            <option value="Machines">Machines</option>
-                            <option value="Safety">Safety</option>
-                            <option value="Quality Control">Quality Control</option>
-                            <option value="Custom">Custom Category</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group" id="customCategoryGroup" style="display: none;">
-                        <label for="customCategory">Custom Category Name</label>
-                        <input type="text" id="customCategory" placeholder="Enter custom category">
-                    </div>
-
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M12 5v14M5 12h14"/>
-                            </svg>
-                            Add Video
-                        </button>
-                        <button type="button" class="btn btn-secondary" id="resetVideoForm">Reset</button>
-                    </div>
-                </form>
-            </div>
-
-            </div>
-    </div>
-
-    <div class="admin-overlay" id="adminOverlay"></div>
-
-    <header>
-        <div class="header-content">
-            <div class="logo-container">
-                <div class="leaf-icon">🌱</div>
-                <h1>Plantables<span class="highlight">.store</span></h1>
-            </div>
-            <p class="subtitle">Standard Operating Procedures Dashboard</p>
-            <div class="header-decoration"></div>
-        </div>
-    </header>
-
-    <main class="container">
-        
-        <section class="sop-section">
-            <div class="section-title">
-                <h2>Production Areas</h2>
-                <div class="title-line"></div>
+        <div class="admin-panel" id="adminPanel">
+            <div class="admin-header">
+                <h2>Admin Panel</h2>
+                <button class="close-btn" id="closeAdmin" aria-label="Close Admin Panel">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
             </div>
             
-            <div class="dashboard-grid" id="dashboardGrid">
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="videos">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <polygon points="23 7 16 12 23 17 23 7"/>
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                    </svg>
+                    Add Video
+                </button>
                 </div>
-        </section>
 
-        <section class="video-section">
-            <div class="section-title">
-                <h2>Training Hub</h2>
-                <p class="section-subtitle">Watch step-by-step tutorials to master each process</p>
-                <div class="title-line"></div>
-            </div>
+            <div class="admin-content">
+                <div class="tab-content active" id="videosTab">
+                    <form id="addVideoForm" class="admin-form">
+                        <h3>Add New Training Video</h3>
+                        
+                        <div class="form-group">
+                            <label for="videoTitle">Video Title *</label>
+                            <input type="text" id="videoTitle" required placeholder="e.g., How to Use Manual Corner Cutter">
+                        </div>
 
-            <div class="video-interface">
-                <aside class="video-sidebar">
-                    <div class="sidebar-header">
-                        <h3>Tutorial Library</h3>
-                        <span class="video-count" id="videoCount">0 videos</span>
-                    </div>
-                    
-                    <div class="search-wrapper">
-                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <circle cx="11" cy="11" r="8"/>
-                            <path d="m21 21-4.35-4.35"/>
-                        </svg>
-                        <input type="text" id="videoSearch" placeholder="Search tutorials...">
-                    </div>
-                    
-                    <ul class="video-list" id="videoList">
-                        </ul>
-                    
-                    <div id="noResults" class="no-results" style="display:none;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="12" y1="8" x2="12" y2="12"/>
-                            <line x1="12" y1="16" x2="12.01" y2="16"/>
-                        </svg>
-                        <p>No videos found</p>
-                    </div>
-                </aside>
+                        <div class="form-group">
+                            <label for="videoLink">Google Drive Link *</label>
+                            <input type="url" id="videoLink" required placeholder="https://drive.google.com/file/d/...">
+                            <span class="help-text">Paste the shareable Google Drive link</span>
+                        </div>
 
-                <div class="video-display">
-                    <div class="video-player-container">
-                        <iframe id="mainPlayer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        <div id="placeholder-msg" class="player-placeholder">
-                            <div class="placeholder-content">
-                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M8 5v14l11-7z"/>
+                        <div class="form-group">
+                            <label for="videoCategory">Category *</label>
+                            <select id="videoCategory" required>
+                                <option value="">Select a category</option>
+                                <option value="Tools">Tools</option>
+                                <option value="Assembly">Assembly</option>
+                                <option value="Machines">Machines</option>
+                                <option value="Safety">Safety</option>
+                                <option value="Quality Control">Quality Control</option>
+                                <option value="Custom">Custom Category</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="customCategoryGroup" style="display: none;">
+                            <label for="customCategory">Custom Category Name</label>
+                            <input type="text" id="customCategory" placeholder="Enter custom category">
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 5v14M5 12h14"/>
                                 </svg>
-                                <h3>Select a video to start watching</h3>
-                                <p>Choose from the tutorial library to begin</p>
+                                Add Video
+                            </button>
+                            <button type="button" class="btn btn-secondary" id="resetVideoForm">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                </div>
+        </div>
+
+        <div class="admin-overlay" id="adminOverlay"></div>
+
+        <header>
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="leaf-icon">🌱</div>
+                    <h1>Plantables<span class="highlight">.store</span></h1>
+                </div>
+                <p class="subtitle">Standard Operating Procedures Dashboard</p>
+                <div class="header-decoration"></div>
+            </div>
+        </header>
+
+        <main class="container">
+            
+            <section class="sop-section">
+                <div class="section-title">
+                    <h2>Production Areas</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="dashboard-grid" id="dashboardGrid">
+                    </div>
+            </section>
+
+            <section class="video-section">
+                <div class="section-title">
+                    <h2>Training Hub</h2>
+                    <p class="section-subtitle">Watch step-by-step tutorials to master each process</p>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="video-interface">
+                    <aside class="video-sidebar">
+                        <div class="sidebar-header">
+                            <h3>Tutorial Library</h3>
+                            <span class="video-count" id="videoCount">0 videos</span>
+                        </div>
+                        
+                        <div class="search-wrapper">
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            <input type="text" id="videoSearch" placeholder="Search tutorials...">
+                        </div>
+                        
+                        <ul class="video-list" id="videoList">
+                            </ul>
+                        
+                        <div id="noResults" class="no-results" style="display:none;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="12"/>
+                                <line x1="12" y1="16" x2="12.01" y2="16"/>
+                            </svg>
+                            <p>No videos found</p>
+                        </div>
+                    </aside>
+
+                    <div class="video-display">
+                        <div class="video-player-container">
+                            <iframe id="mainPlayer" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div id="placeholder-msg" class="player-placeholder">
+                                <div class="placeholder-content">
+                                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                    <h3>Select a video to start watching</h3>
+                                    <p>Choose from the tutorial library to begin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-meta">
+                            <h3 id="currentVideoTitle">No video selected</h3>
+                            <div class="video-controls">
+                                <button class="control-btn" id="prevVideo" disabled>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                                    </svg>
+                                    Previous
+                                </button>
+                                <button class="control-btn" id="nextVideo" disabled>
+                                    Next
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="video-meta">
-                        <h3 id="currentVideoTitle">No video selected</h3>
-                        <div class="video-controls">
-                            <button class="control-btn" id="prevVideo" disabled>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                    <path d="M19 12H5M12 19l-7-7 7-7"/>
-                                </svg>
-                                Previous
-                            </button>
-                            <button class="control-btn" id="nextVideo" disabled>
-                                Next
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="leaf-icon">🌱</div>
+                    <span>Plantables.store</span>
+                </div>
+                <p>&copy; 2025 Plantables.store | Internal Training Dashboard</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Support</a>
+                    <a href="#" class="footer-link">Documentation</a>
+                    <a href="#" class="footer-link">Feedback</a>
                 </div>
             </div>
-        </section>
+        </footer>
 
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <div class="leaf-icon">🌱</div>
-                <span>Plantables.store</span>
-            </div>
-            <p>&copy; 2025 Plantables.store | Internal Training Dashboard</p>
-            <div class="footer-links">
-                <a href="#" class="footer-link">Support</a>
-                <a href="#" class="footer-link">Documentation</a>
-                <a href="#" class="footer-link">Feedback</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <script src="script.js"></script>
+    </body>
+    </html>
