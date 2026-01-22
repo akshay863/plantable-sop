@@ -13,6 +13,7 @@ const defaultVideos = [
     { title: "Saga Digital Cutting Machine", link: "https://drive.google.com/file/d/1THpx6Vkd6Q7HUDdO2MtA-VUVL6yf41O2/view?usp=sharing", category: "Machines" },
     { title: "Vulcan Small Cutting Machine", link: "https://drive.google.com/file/d/1JVSAwsTMqSY59g5VLo4-Rinm5n0CLCWF/view?usp=sharing", category: "Machines" },
      { title: "sunflower bouquet", link: "https://drive.google.com/file/d/1tCucFGZ8ALmPo5UsRk39cZo0eH-Wi__t/view?usp=drive_link", category: "assembly" },
+     { title: "tearing and foiling", link: "https://drive.google.com/file/d/1r6cYNdeE0BAQ9V8Sk3238aVrA83sbAL9/view?usp=drive_link", category: "assembly" },
     { title: "How to Use Paper Cutter and Scale", link: "https://drive.google.com/file/d/1MhSY8fheb-7bpw0YMqlzK6QI1N-l2UeZ/view?usp=sharing", category: "Tools" }
 ];
 
@@ -699,4 +700,5 @@ function showToast(message, type = 'success') {
 }
 
 console.log('Admin features loaded. Use the Admin button to manage content!');
+
 
