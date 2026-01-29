@@ -14,7 +14,7 @@ const defaultVideos = [
     { title: "Vulcan Small Cutting Machine", link: "https://drive.google.com/file/d/1JVSAwsTMqSY59g5VLo4-Rinm5n0CLCWF/view?usp=sharing", category: "Machines" },
     { title: "sunflower bouquet", link: "https://drive.google.com/file/d/1tCucFGZ8ALmPo5UsRk39cZo0eH-Wi__t/view?usp=drive_link", category: "assembly" },
     { title: "tearing and foiling", link: "https://drive.google.com/file/d/1r6cYNdeE0BAQ9V8Sk3238aVrA83sbAL9/view?usp=drive_link", category: "assembly" },
-    { title: "How to Use Paper Cutter and Scale", link: "https://drive.google.com/file/d/1MhSY8fheb-7bpw0YMqlzK6QI1N-l2UeZ/view?usp=sharing", category: "Tools" }
+    { title: "How to Use Paper Cutter and Scale", link: "https://drive.google.com/file/d/1MhSY8fheb-7bpw0YMqlzK6QI1N-l2UeZ/view?usp=sharing", category: "Tools" },
     { title: "flower bouquet cone making ", link: "https://drive.google.com/file/d/154rJCdLXALP22_LyNnhe6jH_nDweftHe/view?usp=drive_link", category: "assembly" }
 ];
 
@@ -701,6 +701,7 @@ function showToast(message, type = 'success') {
 }
 
 console.log('Admin features loaded. Use the Admin button to manage content!');
+
 
 
 
